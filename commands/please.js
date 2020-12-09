@@ -12,7 +12,7 @@ module.exports = {
         message.react('🤣');
         message.channel.send(newEmbed).then(sentEmbed => {
             sentEmbed.react('👀');
-            sentEmbed.awaitReactions((reaction, user) => user.id === message)
+            // sentEmbed.awaitReactions((reaction, user) => user.id === message)
         });
     }
 }
