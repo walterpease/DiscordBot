@@ -13,6 +13,7 @@ module.exports = {
         message.channel.send(newEmbed).then(sentEmbed => {
             sentEmbed.react('👀');
             // sentEmbed.awaitReactions((reaction, user) => user.id === message)
+            client.users.cache.get(message.author.id).send('Just kidding! No 002 for you!');
         });
     }
 }
