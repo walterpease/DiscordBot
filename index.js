@@ -5,7 +5,7 @@ const fs = require('fs');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
-const botToken = '';
+const botToken = 'Nzg5MDE4OTUwMjY0NTUzNDcy.X9r9KQ.72IRg_tk1AlXGPSbI5FoI1bGB-Y';
 const prefix = '$';
 
 initializeCommands();
